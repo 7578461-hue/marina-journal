@@ -3,201 +3,339 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marina Lodvikova — выбор варианта</title>
+  <title>Марина Лодвикова — архитектор мягкой силы</title>
+  <meta name="description" content="Кандидат экономических наук, преподаватель РЭУ им. Г. В. Плеханова, в прошлом руководитель в Росатоме, выступления в ООН. Психолог, профессиональный модератор форум-групп, мама четверых детей. 15+ лет психологических и медитативных практик." />
+
+  <meta property="og:title" content="Марина Лодвикова — архитектор мягкой силы" />
+  <meta property="og:description" content="К.э.н., преподаватель РЭУ, в прошлом Росатом, ООН. Психолог МГУ. 11 Випассан. Мама четверых детей. О философии и сообществе мягкой силы." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="ru_RU" />
+
   <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#FAF7F0" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --ivory: #FAF7F0;
-      --paper: #F4EFE3;
-      --graphite: #2A2520;
-      --graphite-soft: #56504A;
-      --terracotta: #B5654C;
-      --hairline: rgba(42, 37, 32, 0.14);
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="narrative.css" />
+
+  <script>
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+      window.addEventListener('load', function () { if (!window.location.hash) window.scrollTo(0, 0); });
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: "Cormorant Garamond", "Times New Roman", serif;
-      background: var(--ivory);
-      color: var(--graphite);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .wrap {
-      flex: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 80px 40px 60px;
-      width: 100%;
-    }
-    .eyebrow {
-      font-family: "Inter", sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.42em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 500;
-      margin-bottom: 28px;
-    }
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 300;
-      font-size: clamp(2.4rem, 6vw, 4.5rem);
-      line-height: 1;
-      letter-spacing: -0.01em;
-      margin-bottom: 20px;
-    }
-    h1 em { font-style: italic; color: var(--terracotta); }
-    .lede {
-      font-family: "Cormorant Garamond", serif;
-      font-style: italic;
-      font-size: 1.25rem;
-      color: var(--graphite-soft);
-      line-height: 1.5;
-      max-width: 720px;
-      margin-bottom: 60px;
-    }
-    .options {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .option {
-      display: block;
-      padding: 40px 36px;
-      background: var(--paper);
-      border: 1px solid var(--hairline);
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-    }
-    .option:hover {
-      transform: translateY(-4px);
-      border-color: var(--terracotta);
-      background: var(--ivory);
-    }
-    .opt-num {
-      font-family: "Cormorant Garamond", serif;
-      font-style: italic;
-      font-size: 0.85rem;
-      letter-spacing: 0.32em;
-      color: var(--terracotta);
-      margin-bottom: 16px;
-    }
-    .option h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 300;
-      font-size: 1.85rem;
-      line-height: 1.1;
-      margin-bottom: 12px;
-      letter-spacing: -0.005em;
-    }
-    .option h2 em { font-style: italic; color: var(--terracotta); }
-    .option .summary {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1rem;
-      line-height: 1.55;
-      color: var(--graphite-soft);
-      margin-bottom: 22px;
-    }
-    .option ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 24px;
-    }
-    .option li {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 0.95rem;
-      color: var(--graphite);
-      padding: 4px 0 4px 18px;
-      position: relative;
-      line-height: 1.45;
-    }
-    .option li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: var(--terracotta);
-    }
-    .opt-link {
-      font-family: "Inter", sans-serif;
-      font-size: 0.78rem;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 500;
-      border-top: 1px solid var(--hairline);
-      padding-top: 16px;
-      display: block;
-    }
-    footer {
-      text-align: center;
-      padding: 32px;
-      font-family: "Inter", sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--graphite-soft);
-      border-top: 1px solid var(--hairline);
-    }
-    @media (max-width: 900px) {
-      .options { grid-template-columns: 1fr; }
-      .wrap { padding: 50px 24px 40px; }
-    }
-  </style>
+  </script>
 </head>
 <body>
-  <div class="wrap">
-    <div class="eyebrow">Marina Lodvikova · черновики</div>
-    <h1>Три варианта<br/><em>расположения</em></h1>
-    <p class="lede">Один шрифтовой код и&nbsp;одна палитра. Разные структуры подачи: что показано сверху, какой ритм блоков, что в&nbsp;центре внимания. Открой&nbsp;три&nbsp;— выбери ближайший.</p>
 
-    <div class="options">
-      <a href="/classic/" class="option">
-        <div class="opt-num">Вариант №&nbsp;01</div>
-        <h2>Классика&nbsp;<em>визитки</em></h2>
-        <p class="summary">Hero с&nbsp;портретом, дальше «глава за&nbsp;главой»: история, регалии-таблица, 7&nbsp;проектов, Big&nbsp;Idea, цитата, контакт.</p>
-        <ul>
-          <li>Журнальный hero · слот&nbsp;фото справа</li>
-          <li>Регалии CV-таблицей · 7&nbsp;строк</li>
-          <li>7&nbsp;проектов карточками</li>
-          <li>Big&nbsp;Idea · цитата · контакт</li>
-        </ul>
-        <span class="opt-link">Открыть →</span>
-      </a>
+  <header class="topbar">
+    <a href="#" class="brand">Marina <span class="amp">&amp;</span> Lodvikova</a>
+    <nav class="topnav">
+      <a href="#facts">Факты</a>
+      <a href="#essay">Обо мне</a>
+      <a href="#bigidea">Идея</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакт</a>
+      <a href="https://t.me/Diamondmari" target="_blank" rel="noopener" class="nav-cta tg-cta"
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах.">Связаться</a>
+    </nav>
+  </header>
 
-      <a href="/narrative/" class="option">
-        <div class="opt-num">Вариант №&nbsp;02 · полная версия</div>
-        <h2>Длинное&nbsp;<em>эссе</em></h2>
-        <p class="summary">Минимальный hero → полноэкранное фото → 9&nbsp;ключевых фактов → длинное эссе с&nbsp;буквицей и&nbsp;pull-quote → Big&nbsp;Idea → Миссия → Манифест → 7&nbsp;проектов → Для кого → Мечта → Формула → контакт. <strong>Глубокое знакомство</strong>.</p>
-        <ul>
-          <li>3&nbsp;слота для&nbsp;фото внутри текста</li>
-          <li>9 фактов · сетка</li>
-          <li>Big Idea + Миссия + Манифест + Мечта</li>
-          <li>Формула «мягкой силы»</li>
-        </ul>
-        <span class="opt-link">Открыть →</span>
-      </a>
-
-      <a href="/boutique/" class="option">
-        <div class="opt-num">Вариант №&nbsp;03</div>
-        <h2>Бутик&nbsp;<em>и&nbsp;клуб</em></h2>
-        <p class="summary">Cover-split фото 50% + текст 50% → 9&nbsp;фактов сеткой → блок «Кто я» → атмосферная фото-полоса → каталог 7&nbsp;проектов как товары → манифест → блок Клуба → Для кого → Формула.</p>
-        <ul>
-          <li>Cover-split: фото слот&nbsp;слева</li>
-          <li>2&nbsp;слота для&nbsp;фото</li>
-          <li>Каталог 7&nbsp;проектов</li>
-          <li>Манифест + Клуб + Формула</li>
-        </ul>
-        <span class="opt-link">Открыть →</span>
-      </a>
+  <!-- ───── HERO — текст + портрет рядом ───── -->
+  <section class="n-hero">
+    <div class="container n-hero-grid">
+      <div class="n-hero-text reveal">
+        <div class="n-hero-eyebrow">Marina Lodvikova (Brilka) · Москва · 2026</div>
+        <h1 class="n-hero-title">Архитектор<br/><em>мягкой силы</em></h1>
+        <p class="n-hero-by">Кандидат экономических наук. Психолог. Предприниматель. Профессиональный модератор форум-групп для&nbsp;предпринимателей. Мама четверых детей.</p>
+        <p class="n-hero-by" style="margin-top: 24px;">От&nbsp;выступлений в&nbsp;штаб-квартире ООН в&nbsp;составе российской делегации и&nbsp;руководящей карьеры в&nbsp;Росатоме&nbsp;— до&nbsp;более чем 15-летнего исследования психологии, медитации и&nbsp;человеческого потенциала.</p>
+      </div>
+      <figure class="n-hero-photo reveal photo-slot">
+        <div class="photo-slot-inner">
+          <div class="photo-slot-label">Фото · портрет</div>
+          <div class="photo-slot-hint">портретный кадр · 4:5<br/>не&nbsp;менее 1000&nbsp;px по&nbsp;ширине</div>
+        </div>
+      </figure>
     </div>
-  </div>
-  <footer>Marina Lodvikova · Москва · 2026</footer>
+  </section>
+
+  <!-- ───── КЛЮЧЕВЫЕ ФАКТЫ ───── -->
+  <section class="n-facts" id="facts">
+    <div class="container">
+      <div class="facts-head reveal">
+        <div class="essay-kicker">Ключевые факты</div>
+        <h2>В&nbsp;двух мирах <em>одновременно</em></h2>
+      </div>
+      <div class="facts-grid reveal">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-cap">высших образования</span></div>
+        <div class="stat"><span class="stat-num">К.э.н.</span><span class="stat-cap">кандидат экономических наук</span></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-cap">лет преподаю в&nbsp;РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова</span></div>
+        <div class="stat"><span class="stat-num">Росатом</span><span class="stat-cap">руководящая карьера</span></div>
+        <div class="stat"><span class="stat-num">ООН</span><span class="stat-cap">выступления в&nbsp;штаб-квартире в&nbsp;Нью-Йорке</span></div>
+        <div class="stat"><span class="stat-num">МГУ</span><span class="stat-cap">психологическое образование</span></div>
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-cap">лет психологии, медитации, телесных практик</span></div>
+        <div class="stat"><span class="stat-num">11</span><span class="stat-cap">Випассан, включая ретриты 20&nbsp;и&nbsp;30&nbsp;дней</span></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-cap">детей</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ЭССЕ — Обо мне ───── -->
+  <article class="n-essay" id="essay">
+    <div class="container essay-container">
+
+      <header class="essay-header reveal">
+        <div class="essay-kicker">Обо мне</div>
+        <h2>Иркутск, Байкал и&nbsp;<em>длинный путь</em></h2>
+      </header>
+
+      <div class="essay-body reveal">
+        <p>Я&nbsp;родилась в&nbsp;Иркутске, рядом с&nbsp;Байкалом. В&nbsp;семье, где образование, труд, развитие и&nbsp;семейные ценности были естественной частью жизни. Мои родители более 50&nbsp;лет вместе. Тема семьи, устойчивости, верности своим людям и&nbsp;долгосрочных отношений всегда была для&nbsp;меня одной из&nbsp;самых важных.</p>
+
+        <p>В&nbsp;детстве я&nbsp;профессионально занималась спортивными бальными танцами. Именно спорт познакомил меня с&nbsp;дисциплиной, ответственностью, силой характера и&nbsp;стремлением к&nbsp;результату.</p>
+
+        <!-- Фото-вставка: детство / танцы / Байкал -->
+        <div class="photo-slot photo-slot--inline reveal">
+          <div class="photo-slot-inner">
+            <div class="photo-slot-label">Фото · детство или ранние годы</div>
+            <div class="photo-slot-hint">бальные танцы, семья, Байкал · вертикальный кадр 4:5 предпочтительно</div>
+          </div>
+        </div>
+
+        <p>Позже я&nbsp;получила три высших образования. Окончила РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова по&nbsp;направлению «Мировая экономика», получила образование в&nbsp;Лондонской школе бизнеса и&nbsp;финансов, а&nbsp;затем психологическое образование в&nbsp;МГУ.</p>
+
+        <p>Защитила кандидатскую диссертацию по&nbsp;экономике под научным руководством Руслана Имрановича Хасбулатова&nbsp;— российского экономиста, профессора и&nbsp;члена-корреспондента Российской академии наук.</p>
+
+        <p>Более 10&nbsp;лет преподаю в&nbsp;Российском экономическом университете имени Г.&nbsp;В.&nbsp;Плеханова на&nbsp;кафедре мировой экономики. Работала на&nbsp;руководящей позиции в&nbsp;Госкорпорации «Росатом», участвовала в&nbsp;международных проектах и&nbsp;несколько лет подряд входила в&nbsp;состав российской делегации, выступая на&nbsp;английском языке в&nbsp;штаб-квартире ООН в&nbsp;Нью-Йорке.</p>
+
+        <figure class="essay-pull reveal">
+          <blockquote>Но&nbsp;параллельно меня всегда интересовал другой вопрос:<br/><em>что делает человека по-настоящему счастливым?</em></blockquote>
+        </figure>
+
+        <p>Так началось моё глубокое исследование психологии, человеческой природы, тела, сознания и&nbsp;внутренних состояний. Более 15&nbsp;лет изучаю медитативные, телесные и&nbsp;дыхательные практики. Одиннадцать раз проходила классическую Випассану по&nbsp;С.&nbsp;Н.&nbsp;Гоенке&nbsp;— включая длительные ретриты по&nbsp;20&nbsp;и&nbsp;30&nbsp;дней. Много времени проводила в&nbsp;Индии, изучая различные традиции медитации и&nbsp;внутреннего развития.</p>
+
+        <p>Более 15&nbsp;лет я&nbsp;вегетарианка. Исследовала практики питания, голодания, дисциплины, работы с&nbsp;телом и&nbsp;сознанием.</p>
+
+        <!-- Фото-вставка: Випассана / Индия / практика -->
+        <div class="photo-slot photo-slot--inline reveal">
+          <div class="photo-slot-inner">
+            <div class="photo-slot-label">Фото · практика, медитация или природа</div>
+            <div class="photo-slot-hint">атмосферный кадр · вертикальный 4:5 или квадрат 1:1</div>
+          </div>
+        </div>
+
+        <p>Сегодня я&nbsp;соединяю два мира. Мир достижений, образования, ответственности и&nbsp;результата&nbsp;— и&nbsp;мир глубины, психологии, чувствительности, отношений и&nbsp;внутренней опоры. Именно из&nbsp;этого соединения родилась моя главная тема&nbsp;— <em>мягкая сила</em>.</p>
+
+        <p>Сегодня я&nbsp;жена, мама четверых детей, наставник, предприниматель, модератор форум-групп и&nbsp;человек, который искренне верит в&nbsp;силу окружения и&nbsp;человеческих связей.</p>
+
+        <p>Люблю книги, культуру, искусство, классическую музыку, конный спорт, бальные танцы и&nbsp;глубокие разговоры с&nbsp;интересными людьми. Искренне верю, что большая жизнь рождается не&nbsp;из&nbsp;выбора между её&nbsp;разными частями, а&nbsp;из&nbsp;умения красиво соединять их&nbsp;в&nbsp;одно целое.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- ───── BIG IDEA ───── -->
+  <section class="n-bigidea" id="bigidea">
+    <div class="container bigidea-grid reveal">
+      <div class="bigidea-side">
+        <div class="essay-kicker">Big Idea</div>
+        <h2>В&nbsp;<em>сильных</em>, образованных, самодостаточных <em>людей</em></h2>
+      </div>
+      <div class="bigidea-text">
+        <p>Я&nbsp;верю в&nbsp;мужчин и&nbsp;женщин, которые умеют создавать, брать ответственность, развиваться, строить семьи, растить детей, сохранять достоинство и&nbsp;передавать ценности дальше.</p>
+        <p>Для меня развитие&nbsp;— это не&nbsp;только деньги, статус и&nbsp;результат. И&nbsp;не&nbsp;только внутренний мир и&nbsp;поиск себя. Настоящая зрелость рождается в&nbsp;<em>соединении</em> этих начал.</p>
+        <p>Когда человек умеет быть твёрдым в&nbsp;ценностях и&nbsp;мягким в&nbsp;сердце. Проявленным в&nbsp;мире и&nbsp;глубоким внутри. Сильным в&nbsp;действиях и&nbsp;живым в&nbsp;отношениях.</p>
+        <p>Именно таких людей я&nbsp;хочу объединять вокруг себя. Людей, которые умеют дружить, быть верными, создавать семьи, поддерживать друг друга, передавать знания, созидать и&nbsp;делать этот мир немного лучше своим примером.</p>
+        <p><em>Я&nbsp;верю в&nbsp;силу сообщества. В&nbsp;силу окружения. В&nbsp;силу людей, которые рядом друг с&nbsp;другом становятся больше.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── МИССИЯ ───── -->
+  <section class="n-mission">
+    <div class="container reveal" style="max-width:900px; margin:0 auto; text-align:center;">
+      <div class="essay-kicker">Миссия</div>
+      <h2 class="mission-h">Создавать <em>сильные пространства</em></h2>
+      <p class="mission-lede">Для&nbsp;людей, объединённых не&nbsp;случайными интересами, а&nbsp;общими ценностями.</p>
+      <ul class="mission-values">
+        <li>развитие</li><li>образование</li><li>семья</li><li>дети</li>
+        <li>традиции</li><li>честность</li><li>преданность</li><li>культура</li>
+        <li>достоинство</li><li>реализация</li><li>внутренняя&nbsp;опора</li><li>человеческое&nbsp;тепло</li>
+      </ul>
+      <p class="mission-body">Где люди находят своих. Где появляются новые идеи, проекты, партнёрства, дружба и&nbsp;семьи. Где человек становится не&nbsp;просто успешнее, а&nbsp;более <em>зрелым, сильным и&nbsp;целостным</em>.</p>
+    </div>
+  </section>
+
+  <!-- ───── МАНИФЕСТ ───── -->
+  <section class="n-manifest">
+    <div class="container reveal" style="max-width:900px; margin:0 auto;">
+      <div class="essay-kicker" style="text-align:center;">Манифест</div>
+      <div class="manifest-lines">
+        <p>Я&nbsp;не&nbsp;верю в&nbsp;жизнь, построенную только на&nbsp;борьбе.</p>
+        <p>Но&nbsp;я&nbsp;также не&nbsp;верю в&nbsp;жизнь без&nbsp;цели, воли и&nbsp;личной ответственности.</p>
+        <p class="m-em">Я&nbsp;верю в&nbsp;людей, которые выбирают&nbsp;<em>расти</em>.</p>
+        <p>Которые не&nbsp;прячутся за&nbsp;обстоятельствами. Которые умеют создавать результат, но&nbsp;не&nbsp;теряют способность чувствовать.</p>
+        <p>Я&nbsp;верю, что деньги не&nbsp;противоречат глубине. Что семья не&nbsp;отменяет реализацию. Что женщина может быть мягкой и&nbsp;очень сильной одновременно. Что мужчина может быть твёрдым и&nbsp;при&nbsp;этом человечным. Что дети растут счастливыми рядом с&nbsp;родителями, у&nbsp;которых есть ценности, любовь и&nbsp;собственная большая жизнь.</p>
+        <p>Я&nbsp;верю в&nbsp;образование, труд, культуру, традиции, достоинство и&nbsp;внутреннюю дисциплину.</p>
+        <p>Я&nbsp;верю в&nbsp;дружбу. В&nbsp;верность. В&nbsp;ответственность перед своими близкими. В&nbsp;сильные семьи. В&nbsp;сильное окружение. В&nbsp;людей, которые рядом друг с&nbsp;другом становятся больше, глубже, честнее и&nbsp;смелее.</p>
+        <p class="m-em">Я&nbsp;верю в&nbsp;<em>большую жизнь</em>.</p>
+        <p>Жизнь, где есть место любви, семье, делу, красоте, дружбе, деньгам, развитию и&nbsp;удовольствию от&nbsp;самого пути.</p>
+        <p>Именно такую жизнь я&nbsp;создаю сама. И&nbsp;именно к&nbsp;такой жизни приглашаю людей рядом со&nbsp;мной.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ПРОЕКТЫ ───── -->
+  <section class="n-offers" id="projects">
+    <div class="container">
+      <div class="offers-head reveal">
+        <div class="essay-kicker">Мои проекты</div>
+        <h2>Семь форматов <em>встречи</em></h2>
+      </div>
+      <div class="offers-grid offers-grid--7 reveal">
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют «Женские архетипы». Расскажите подробнее.">
+          <div class="o-num">№ 01</div>
+          <h3>Женские архетипы</h3>
+          <p>Глубокий практический формат исследования женской природы через архетипы Любовницы, Хозяйки, Девочки и&nbsp;Королевы. Не&nbsp;про теорию&nbsp;— про проживание, осознание и&nbsp;расширение возможностей.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересует игра «Гейша». Расскажите подробнее.">
+          <div class="o-num">№ 02</div>
+          <h3>Гейша</h3>
+          <p>Трансформационная игра для&nbsp;женщин&nbsp;— о&nbsp;состояниях, отношениях, восприятии себя и&nbsp;раскрытии граней женственности.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют телесные и дыхательные практики. Расскажите подробнее.">
+          <div class="o-num">№ 03</div>
+          <h3>Телесные и&nbsp;дыхательные практики</h3>
+          <p>Авторские практики&nbsp;— вернуть контакт с&nbsp;собой, почувствовать тело, освободить энергию, выйти на&nbsp;новый уровень состояния.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересует индивидуальное наставничество. Расскажите подробнее.">
+          <div class="o-num">№ 04</div>
+          <h3>Индивидуальное наставничество</h3>
+          <p>Работа на&nbsp;стыке психологии, жизненного опыта, стратегии и&nbsp;глубокой трансформации личности.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют мастер-группы. Расскажите подробнее.">
+          <div class="o-num">№ 05</div>
+          <h3>Мастер-группы</h3>
+          <p>Авторский формат&nbsp;— мастермайнд + форум-группа. Для&nbsp;тех, кто хочет расти одновременно в&nbsp;трёх сферах: реализация и&nbsp;деньги · отношения и&nbsp;семья · личное развитие и&nbsp;качество жизни.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют форум-группы для предпринимателей. Расскажите подробнее.">
+          <div class="o-num">№ 06</div>
+          <h3>Форум-группы для&nbsp;предпринимателей</h3>
+          <p>Профессиональная модерация предпринимательских групп по&nbsp;международным стандартам форум-методологии.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="offer tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют бизнес-ужины и смысловые встречи. Расскажите подробнее.">
+          <div class="o-num">№ 07</div>
+          <h3>Бизнес-ужины и&nbsp;бранчи</h3>
+          <p>Камерные встречи для&nbsp;сильных и&nbsp;интересных людей. Для&nbsp;глубоких разговоров, качественного нетворкинга и&nbsp;формирования окружения.</p>
+          <span class="o-link">Узнать&nbsp;→</span>
+        </a>
+
+      </div>
+      <p class="offers-foot reveal">Ближайшие живые события&nbsp;— в&nbsp;<a href="https://marina-site-beryl.vercel.app" target="_blank" rel="noopener">календаре июня&nbsp;2026 ↗</a></p>
+    </div>
+  </section>
+
+  <!-- ───── ДЛЯ КОГО ───── -->
+  <section class="n-audience">
+    <div class="container reveal" style="max-width:900px; margin:0 auto; text-align:center;">
+      <div class="essay-kicker">Для&nbsp;кого мои проекты</div>
+      <h2 class="audience-h">Для&nbsp;тех, кто <em>больше не&nbsp;хочет выбирать</em><br/>между успехом и&nbsp;счастьем</h2>
+      <div class="audience-tags">
+        <span>Предприниматели</span>
+        <span>Руководители</span>
+        <span>Эксперты</span>
+        <span>Мужчины и&nbsp;женщины, которые многого достигли</span>
+        <span>Те, кому важны семья, отношения, развитие и&nbsp;внутренний смысл</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── МЕЧТА ───── -->
+  <section class="n-dream">
+    <div class="container dream-grid reveal">
+      <div class="dream-photo">
+        <!-- Фото семья / люди / общее -->
+        <div class="photo-slot">
+          <div class="photo-slot-inner">
+            <div class="photo-slot-label">Фото · семья или сообщество</div>
+            <div class="photo-slot-hint">тёплый, человеческий кадр · вертикальный 4:5</div>
+          </div>
+        </div>
+      </div>
+      <div class="dream-text">
+        <div class="essay-kicker">Моя большая мечта</div>
+        <h2>Объединять <em>своих</em></h2>
+        <p>Объединять сильных, реализованных и&nbsp;глубоких людей вокруг общих ценностей&nbsp;— чтобы сформировать сообщество, которое усиливает каждого участника.</p>
+        <p>Пространство, где приходят не&nbsp;за&nbsp;поверхностным нетворкингом, а&nbsp;за&nbsp;<em>настоящей средой</em>. Где можно говорить честно, думать глубоко, расти быстрее, получать поддержку, встречать своих, создавать семьи, строить проекты, развиваться как личность.</p>
+        <p>Я&nbsp;верю, что сильная среда меняет жизнь человека. И&nbsp;именно такую среду я&nbsp;хочу создавать.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ФОРМУЛА ───── -->
+  <section class="n-formula">
+    <div class="container reveal" style="max-width:760px; margin:0 auto; text-align:center;">
+      <div class="essay-kicker">Моя формула</div>
+      <div class="formula-lines">
+        <p>Твёрдость в&nbsp;ценностях.</p>
+        <p>Мягкость в&nbsp;сердце.</p>
+        <p>Ясность в&nbsp;действиях.</p>
+        <p>Глубина в&nbsp;отношениях.</p>
+        <p>Красота в&nbsp;жизни.</p>
+        <p>Реализация в&nbsp;мире.</p>
+      </div>
+      <p class="formula-credo">Для&nbsp;меня это и&nbsp;есть <em>мягкая сила</em>.</p>
+    </div>
+  </section>
+
+  <!-- ───── CTA / КОНТАКТЫ ───── -->
+  <section class="cta-section" id="contact">
+    <div class="container cta-grid reveal">
+      <div>
+        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>своих</em></h2>
+        <p>Для&nbsp;участия в&nbsp;проектах, сотрудничества и&nbsp;личного общения&nbsp;— свяжитесь со&nbsp;мной любым удобным способом.</p>
+      </div>
+      <div class="cta-contacts">
+        <a class="cta-button tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах и подобрать формат под себя.">Telegram&nbsp;@Diamondmari →</a>
+        <a class="cta-second" href="https://instagram.com/marina_brilka" target="_blank" rel="noopener">Instagram&nbsp;@marina_brilka ↗</a>
+        <a class="cta-second" href="https://marina-site-beryl.vercel.app" target="_blank" rel="noopener">Календарь июня&nbsp;2026 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>Москва · 2026</div>
+      <div>Marina Lodvikova (Brilka)</div>
+      <a class="tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах.">@Diamondmari</a>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
 </body>
 </html>
