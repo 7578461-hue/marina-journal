@@ -1,7 +1,7 @@
 /* ─── Narrative — длинное эссе ─── */
 
 .n-hero {
-  padding: clamp(40px, 6vw, 80px) 0;
+  padding: clamp(24px, 4vw, 56px) 0;
 }
 .n-hero-eyebrow {
   font-family: var(--sans);
@@ -801,43 +801,59 @@
   .mission-values li { font-size: 0.66rem; padding: 6px 12px; }
 }
 
-/* ─── HERO с большим портретом сбоку ─── */
+/* ─── HERO с большим портретом сбоку — помещается в экран ─── */
 .n-hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: clamp(40px, 5vw, 80px);
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 4vw, 60px);
   align-items: stretch;
-  min-height: 86vh;
+  /* высота = viewport минус шапка и padding секции */
+  min-height: calc(100svh - 180px);
 }
 .n-hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 12px 0;
 }
 .n-hero-photo {
-  aspect-ratio: 3 / 4;
   margin: 0;
   align-self: stretch;
-  min-height: 86vh;
-  max-height: 920px;
+  /* фото занимает всю высоту колонки — без aspect-ratio который вылазит */
+  width: 100%;
+  /* безопасная верхняя граница чтобы фото не было гигантским */
+  max-height: calc(100svh - 180px);
 }
 .n-hero-photo .photo-slot-inner { padding: 32px; }
 
+/* Снижаем размеры hero-типографики чтобы в небольших окнах не давила */
+.n-hero-title {
+  font-size: clamp(3rem, 8vw, 7rem);
+}
+.n-hero-by {
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+}
+
 @media (max-width: 900px) {
+  .n-hero { padding: 28px 0 40px; }
   .n-hero-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
     min-height: auto;
   }
+  .n-hero-text { justify-content: flex-start; padding: 0; }
   .n-hero-photo {
     order: -1;
-    max-width: 90%;
     aspect-ratio: 4 / 5;
-    min-height: auto;
+    width: 100%;
+    max-width: 100%;
     max-height: none;
   }
+  .n-hero-title { font-size: clamp(2.6rem, 11vw, 4.5rem); }
+  .n-hero-by { font-size: 1.05rem; }
+  .n-hero-eyebrow { font-size: 0.62rem; letter-spacing: 0.32em; margin-bottom: 24px; }
 }
 @media (max-width: 560px) {
-  .n-hero-photo { max-width: 100%; }
+  .n-hero { padding: 20px 0 32px; }
+  .n-hero-photo { aspect-ratio: 3 / 4; }
 }
