@@ -1,7 +1,7 @@
 /* ─── Narrative — длинное эссе ─── */
 
 .n-hero {
-  padding: clamp(80px, 12vw, 160px) 0 clamp(40px, 6vw, 80px);
+  padding: clamp(40px, 6vw, 80px) 0;
 }
 .n-hero-eyebrow {
   font-family: var(--sans);
@@ -801,33 +801,43 @@
   .mission-values li { font-size: 0.66rem; padding: 6px 12px; }
 }
 
-/* ─── HERO с портретом сбоку ─── */
+/* ─── HERO с большим портретом сбоку ─── */
 .n-hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(40px, 6vw, 100px);
-  align-items: center;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: stretch;
+  min-height: 86vh;
 }
 .n-hero-text {
-  /* контейнер заголовка */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 .n-hero-photo {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   margin: 0;
+  align-self: stretch;
+  min-height: 86vh;
+  max-height: 920px;
 }
-.n-hero-photo .photo-slot-inner { padding: 28px; }
+.n-hero-photo .photo-slot-inner { padding: 32px; }
 
 @media (max-width: 900px) {
   .n-hero-grid {
     grid-template-columns: 1fr;
     gap: 36px;
+    min-height: auto;
   }
   .n-hero-photo {
     order: -1;
-    max-width: 70%;
+    max-width: 90%;
     aspect-ratio: 4 / 5;
+    min-height: auto;
+    max-height: none;
   }
 }
 @media (max-width: 560px) {
-  .n-hero-photo { max-width: 85%; }
+  .n-hero-photo { max-width: 100%; }
 }
