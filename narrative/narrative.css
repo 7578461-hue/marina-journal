@@ -471,3 +471,332 @@
   .case { grid-template-columns: 1fr; gap: 8px; }
   .case-meta, .case h3, .case p { grid-column: 1; }
 }
+
+/* ─── Photo slots — плейсхолдеры под фото от Марины ─── */
+.photo-slot {
+  background: var(--paper);
+  border: 1px dashed var(--terracotta);
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.photo-slot--cover {
+  aspect-ratio: 16 / 9;
+  max-height: 80vh;
+  margin-bottom: clamp(40px, 6vw, 80px);
+}
+.photo-slot--inline {
+  aspect-ratio: 4 / 5;
+  max-width: 480px;
+  margin: 36px auto;
+}
+.photo-slot-inner {
+  padding: 32px;
+}
+.photo-slot-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.photo-slot-hint {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--graphite-soft);
+  line-height: 1.45;
+}
+
+/* ─── Факты — расширенная сетка 9 шт ─── */
+.n-facts {
+  padding: clamp(60px, 8vw, 120px) 0;
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.facts-head {
+  text-align: center;
+  margin-bottom: 56px;
+}
+.facts-head h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: -0.01em;
+  margin-top: 14px;
+  color: var(--graphite);
+}
+.facts-head h2 em { font-style: italic; color: var(--terracotta); }
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-left: 1px solid var(--hairline);
+  border-top: 1px solid var(--hairline);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.facts-grid .stat {
+  padding: 36px 24px;
+  text-align: center;
+  border-right: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  background: var(--ivory);
+}
+.facts-grid .stat-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 12px;
+  display: block;
+  letter-spacing: -0.01em;
+}
+.facts-grid .stat-cap {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  line-height: 1.4;
+  display: block;
+}
+
+/* ─── Big Idea ─── */
+.n-bigidea {
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+.bigidea-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 6vw, 100px);
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+.bigidea-side {
+  position: sticky;
+  top: 100px;
+}
+.bigidea-side h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+  margin-top: 14px;
+  color: var(--graphite);
+}
+.bigidea-side h2 em { font-style: italic; color: var(--terracotta); }
+.bigidea-text p {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  margin-bottom: 22px;
+}
+.bigidea-text p em { font-style: italic; color: var(--terracotta); }
+
+/* ─── Миссия ─── */
+.n-mission {
+  padding: clamp(80px, 12vw, 140px) 0;
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.mission-h {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  letter-spacing: -0.01em;
+  margin: 14px 0 20px;
+  line-height: 1.05;
+}
+.mission-h em { font-style: italic; color: var(--terracotta); }
+.mission-lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--graphite-soft);
+  margin-bottom: 36px;
+}
+.mission-values {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+}
+.mission-values li {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  padding: 8px 18px;
+  border: 1px solid var(--hairline);
+  background: var(--ivory);
+}
+.mission-body {
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.mission-body em { font-style: italic; color: var(--terracotta); }
+
+/* ─── Манифест ─── */
+.n-manifest {
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+.manifest-lines p {
+  font-family: var(--serif);
+  font-size: 1.32rem;
+  line-height: 1.55;
+  color: var(--graphite);
+  margin-bottom: 18px;
+  text-align: center;
+}
+.manifest-lines p em { font-style: italic; color: var(--terracotta); }
+.manifest-lines p.m-em {
+  font-size: 1.7rem;
+  font-style: italic;
+  margin: 36px 0;
+  color: var(--graphite);
+}
+
+/* ─── 7 проектов — 3 в ряд ─── */
+.offers-grid--7 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ─── Для кого ─── */
+.n-audience {
+  padding: clamp(60px, 8vw, 100px) 0;
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.audience-h {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 14px 0 36px;
+}
+.audience-h em { font-style: italic; color: var(--terracotta); }
+.audience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 16px;
+}
+.audience-tags span {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  color: var(--graphite);
+  padding: 10px 22px;
+  border: 1px solid var(--hairline);
+  background: var(--ivory);
+}
+
+/* ─── Мечта ─── */
+.n-dream {
+  padding: clamp(80px, 12vw, 140px) 0;
+}
+.dream-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(40px, 6vw, 80px);
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+.dream-photo .photo-slot {
+  aspect-ratio: 4 / 5;
+}
+.dream-text h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin: 14px 0 28px;
+}
+.dream-text h2 em { font-style: italic; color: var(--terracotta); }
+.dream-text p {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--graphite);
+  margin-bottom: 20px;
+}
+.dream-text p em { font-style: italic; color: var(--terracotta); }
+
+/* ─── Формула ─── */
+.n-formula {
+  padding: clamp(80px, 12vw, 140px) 0;
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.formula-lines {
+  margin: 28px 0 40px;
+}
+.formula-lines p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.5;
+  color: var(--graphite);
+  margin-bottom: 6px;
+}
+.formula-credo {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--graphite-soft);
+}
+.formula-credo em { color: var(--terracotta); font-style: italic; font-weight: 400; }
+
+/* ─── CTA контакты колонкой ─── */
+.cta-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.cta-contacts .cta-second {
+  margin: 0;
+}
+
+/* ─── Адаптив ─── */
+@media (max-width: 900px) {
+  .facts-grid { grid-template-columns: 1fr 1fr; }
+  .bigidea-grid { grid-template-columns: 1fr; }
+  .bigidea-side { position: static; }
+  .dream-grid { grid-template-columns: 1fr; }
+  .offers-grid--7 { grid-template-columns: 1fr; }
+  .photo-slot--cover { aspect-ratio: 4/5; max-height: 60vh; }
+}
+@media (max-width: 560px) {
+  .facts-grid { grid-template-columns: 1fr; }
+  .manifest-lines p { font-size: 1.1rem; }
+  .manifest-lines p.m-em { font-size: 1.35rem; margin: 24px 0; }
+  .formula-lines p { font-size: 1.3rem; }
+  .mission-values li { font-size: 0.66rem; padding: 6px 12px; }
+}

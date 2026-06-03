@@ -4,10 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Марина Лодвикова — клуб мягкой силы</title>
-  <meta name="description" content="Наставничество, духовные практики, трансформационные игры, камерные ужины. Сообщество тех, кто соединяет силу и чувствительность." />
-  <meta property="og:title" content="Марина Лодвикова — клуб мягкой силы" />
-  <meta property="og:description" content="Наставничество, практики, игры, ужины. Сообщество мягкой силы." />
-  <meta property="og:type" content="profile" />
+  <meta name="description" content="К.э.н., преподаватель РЭУ им. Г. В. Плеханова, в прошлом Росатом и ООН. Психолог МГУ. 11 Випассан. Мама четверых детей. Наставничество, духовные практики, игры, ужины и сообщество." />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -18,6 +15,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="boutique.css" />
+
+  <style>
+    .photo-slot {
+      background: var(--paper);
+      border: 1px dashed var(--terracotta);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+    }
+    .photo-slot-inner { padding: 32px; }
+    .photo-slot-label {
+      font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.36em;
+      text-transform: uppercase; color: var(--terracotta); font-weight: 500; margin-bottom: 14px;
+    }
+    .photo-slot-hint {
+      font-family: var(--serif); font-style: italic; font-size: 0.95rem;
+      color: var(--graphite-soft); line-height: 1.45;
+    }
+  </style>
 
   <script>
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -32,119 +47,143 @@
   <header class="topbar">
     <a href="#" class="brand">Marina <span class="amp">&amp;</span> Lodvikova</a>
     <nav class="topnav">
-      <a href="#shop">Что есть</a>
+      <a href="#shop">Проекты</a>
       <a href="#about">Кто&nbsp;я</a>
+      <a href="#manifest">Манифест</a>
       <a href="#club">Клуб</a>
-      <a href="#blog">Блог</a>
       <a href="https://t.me/Diamondmari" target="_blank" rel="noopener" class="nav-cta tg-cta"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее.">Войти в&nbsp;клуб</a>
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее.">Связаться</a>
     </nav>
   </header>
 
-  <!-- ───── ОБЛОЖКА — большое фото на пол-экрана + текст ───── -->
+  <!-- ───── COVER — половина фото + половина текст ───── -->
   <section class="b-cover">
-    <div class="cover-photo reveal">
-      <img src="/assets/portrait.jpg" alt="Марина Лодвикова" />
+    <div class="cover-photo reveal photo-slot">
+      <div class="photo-slot-inner">
+        <div class="photo-slot-label">Фото · обложка</div>
+        <div class="photo-slot-hint">портретный или средний&nbsp;план<br/>вертикальный кадр, не&nbsp;менее 1200&nbsp;px по&nbsp;высоте</div>
+      </div>
     </div>
     <div class="cover-text reveal">
-      <div class="cover-eyebrow">Marina Lodvikova · Клуб мягкой силы</div>
-      <h1>Сила и&nbsp;<em>чувствительность</em>&nbsp;— не&nbsp;выбор, а&nbsp;соединение</h1>
-      <p>25&nbsp;лет в&nbsp;корпорациях, годы в&nbsp;ашрамах, четверо детей и&nbsp;собственный метод. Веду тех, кто уже многого достиг&nbsp;— и&nbsp;ищет следующую глубину.</p>
+      <div class="cover-eyebrow">Marina Lodvikova (Brilka) · Москва · 2026</div>
+      <h1>Архитектор <em>мягкой&nbsp;силы</em></h1>
+      <p>Кандидат экономических наук, преподаватель РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова, в&nbsp;прошлом руководитель в&nbsp;Росатоме и&nbsp;выступления в&nbsp;штаб-квартире ООН. Психолог МГУ. Мама четверых детей. 15+&nbsp;лет психологических и&nbsp;медитативных практик.</p>
       <div class="cover-cta">
         <a class="b-btn tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы и подобрать формат под себя.">Связаться</a>
-        <a class="b-link" href="#shop">Смотреть направления →</a>
+           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах.">Связаться</a>
+        <a class="b-link" href="#shop">Смотреть проекты →</a>
       </div>
     </div>
   </section>
 
-  <!-- ───── СЕГОДНЯ Я — 5 фактов-карточек ───── -->
+  <!-- ───── ФАКТЫ — 9 карточек ───── -->
   <section class="b-facts">
     <div class="container">
-      <h2 class="section-h reveal">Сегодня <em>я</em></h2>
+      <h2 class="section-h reveal">В&nbsp;двух мирах <em>одновременно</em></h2>
       <div class="facts-grid reveal">
-        <div class="fact">
-          <div class="fact-num">25</div>
-          <div class="fact-cap">лет в&nbsp;корпорациях<br/><em>топ-менеджмент Росатома</em></div>
-        </div>
-        <div class="fact">
-          <div class="fact-num">К.э.н.</div>
-          <div class="fact-cap">кандидат экономических наук<br/><em>защита и&nbsp;диссертация</em></div>
-        </div>
-        <div class="fact">
-          <div class="fact-num">13+</div>
-          <div class="fact-cap">лет авторских практик<br/><em>сотни клиентов</em></div>
-        </div>
-        <div class="fact">
-          <div class="fact-num">Ашрамы</div>
-          <div class="fact-cap">Индия и&nbsp;Тибет<br/><em>многолетние стажировки</em></div>
-        </div>
-        <div class="fact">
-          <div class="fact-num">Психолог</div>
-          <div class="fact-cap">психолог-практик<br/><em>прикладная работа</em></div>
-        </div>
-        <div class="fact">
-          <div class="fact-num">4</div>
-          <div class="fact-cap">ребёнка<br/><em>двое&nbsp;— близнецы</em></div>
-        </div>
+        <div class="fact"><div class="fact-num">3</div><div class="fact-cap">высших образования<br/><em>РЭУ · LSBF · МГУ</em></div></div>
+        <div class="fact"><div class="fact-num">К.э.н.</div><div class="fact-cap">кандидат экономических наук<br/><em>научный руководитель&nbsp;— Р.&nbsp;И.&nbsp;Хасбулатов</em></div></div>
+        <div class="fact"><div class="fact-num">10+</div><div class="fact-cap">лет преподаю в&nbsp;РЭУ<br/><em>им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова, мировая&nbsp;экономика</em></div></div>
+        <div class="fact"><div class="fact-num">Росатом</div><div class="fact-cap">руководящая карьера<br/><em>международные проекты</em></div></div>
+        <div class="fact"><div class="fact-num">ООН</div><div class="fact-cap">выступления в&nbsp;штаб-квартире<br/><em>в&nbsp;составе российской делегации</em></div></div>
+        <div class="fact"><div class="fact-num">МГУ</div><div class="fact-cap">психологическое образование<br/><em>профессиональная переориентация</em></div></div>
+        <div class="fact"><div class="fact-num">11</div><div class="fact-cap">Випассан<br/><em>включая ретриты 20&nbsp;и&nbsp;30&nbsp;дней · Индия</em></div></div>
+        <div class="fact"><div class="fact-num">15+</div><div class="fact-cap">лет психологии и&nbsp;практик<br/><em>медитация, тело, дыхание</em></div></div>
+        <div class="fact"><div class="fact-num">4</div><div class="fact-cap">ребёнка<br/><em>ежедневная практика мягкой&nbsp;силы</em></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ───── МЕТОД — манифест ───── -->
+  <!-- ───── О СЕБЕ + ФОТО ───── -->
   <section class="b-method" id="about">
     <div class="container">
       <div class="method-grid reveal">
         <div class="method-side">
-          <div class="essay-kicker">Метод</div>
-          <h2>Мягкая&nbsp;<em>сила</em></h2>
+          <div class="essay-kicker">Кто я</div>
+          <h2>Иркутск, Байкал, <em>длинный путь</em></h2>
         </div>
         <div class="method-body">
-          <p class="lead">Не&nbsp;про отказ от&nbsp;достижений. И&nbsp;не&nbsp;про уход только в&nbsp;мягкость. Про&nbsp;<em>соединение</em>&nbsp;— где сила опирается на&nbsp;чувствительность, а&nbsp;чувствительность не&nbsp;ломает реализации.</p>
-          <p>За&nbsp;25&nbsp;лет в&nbsp;корпорациях я&nbsp;знаю изнутри язык бизнеса и&nbsp;давление позиции. За&nbsp;годы в&nbsp;ашрамах&nbsp;— научилась слышать тело и&nbsp;вниманию. Как мать четверых&nbsp;— каждый день проверяю, работает&nbsp;ли это в&nbsp;жизни, а&nbsp;не&nbsp;только в&nbsp;теории.</p>
-          <p>Метод собран на&nbsp;пересечении трёх миров. Не&nbsp;эзотерика. Не&nbsp;корпоративный коучинг. <em>Третий путь.</em></p>
+          <p class="lead">Я&nbsp;родилась в&nbsp;Иркутске, в&nbsp;семье, где образование, труд и&nbsp;семейные ценности были естественной частью жизни. В&nbsp;детстве профессионально занималась спортивными бальными танцами&nbsp;— спорт научил дисциплине и&nbsp;характеру.</p>
+          <p>Три высших образования. Кандидат экономических наук под руководством <em>Р.&nbsp;И.&nbsp;Хасбулатова</em>. Десять лет преподавания в&nbsp;РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова. Руководящая карьера в&nbsp;Госкорпорации «Росатом». Выступления в&nbsp;штаб-квартире ООН в&nbsp;Нью-Йорке.</p>
+          <p>Параллельно&nbsp;— 15&nbsp;лет глубокого исследования психологии, медитации и&nbsp;телесных практик. 11&nbsp;Випассан, время в&nbsp;индийских ашрамах, психологическое образование МГУ. <em>Третий путь</em>&nbsp;— на&nbsp;пересечении восточной традиции, западной психологии и&nbsp;опыта корпоративной дисциплины.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───── ЧТО ЕСТЬ — каталог направлений с цветными карточками ───── -->
+  <!-- ───── ФОТО-ВСТАВКА ───── -->
+  <section class="b-photo-strip">
+    <div class="container">
+      <div class="photo-slot photo-slot--wide reveal">
+        <div class="photo-slot-inner">
+          <div class="photo-slot-label">Фото · атмосферное</div>
+          <div class="photo-slot-hint">портретный или средний план в&nbsp;интерьере · горизонтальный кадр 16:9</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SHOP — каталог 7 проектов ───── -->
   <section class="b-shop" id="shop">
     <div class="container">
-      <h2 class="section-h reveal">Что <em>есть</em></h2>
-      <p class="section-sub reveal">Четыре направления&nbsp;— от&nbsp;индивидуальной работы до&nbsp;клубного сообщества.</p>
+      <h2 class="section-h reveal">Мои <em>проекты</em></h2>
+      <p class="section-sub reveal">От&nbsp;индивидуальной работы до&nbsp;клубного сообщества.</p>
       <div class="shop-grid reveal">
 
-        <a href="https://t.me/Diamondmari" class="shop-item shop-1 tg-cta" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — интересует индивидуальное наставничество.">
-          <div class="shop-tag">№ 01 · Индивидуально</div>
-          <h3>Наставничество</h3>
-          <p>Личные сессии 1:1. Диагностика, точечная работа с&nbsp;запросом, сопровождение перехода.</p>
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересует индивидуальное наставничество.">
+          <div class="shop-tag">№ 01 · 1:1</div>
+          <h3>Индивидуальное наставничество</h3>
+          <p>Работа на&nbsp;стыке психологии, жизненного опыта, стратегии и&nbsp;глубокой трансформации личности.</p>
           <div class="shop-cta">Узнать&nbsp;условия →</div>
         </a>
 
-        <a href="https://t.me/Diamondmari" class="shop-item shop-2 tg-cta" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — интересуют группы духовной практики.">
-          <div class="shop-tag">№ 02 · В&nbsp;группе</div>
-          <h3>Духовная практика</h3>
-          <p>Камерные группы. Дыхательные техники, работа с&nbsp;вниманием, тело. Восточная традиция в&nbsp;современной форме.</p>
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют женские архетипы.">
+          <div class="shop-tag">№ 02 · Женское</div>
+          <h3>Женские архетипы</h3>
+          <p>Глубокий формат&nbsp;— Любовница, Хозяйка, Девочка, Королева. Про&nbsp;проживание, осознание, расширение возможностей.</p>
           <div class="shop-cta">Расписание →</div>
         </a>
 
-        <a href="https://t.me/Diamondmari" class="shop-item shop-3 tg-cta" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — интересуют трансформационные игры.">
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересует игра «Гейша».">
           <div class="shop-tag">№ 03 · Игра</div>
-          <h3>Трансформационные игры</h3>
-          <p>Архетипы, «Гейша», ретриты. Глубокая работа в&nbsp;игровом формате&nbsp;— через образ и&nbsp;роль.</p>
+          <h3>Гейша</h3>
+          <p>Трансформационная игра для&nbsp;женщин&nbsp;— о&nbsp;состояниях, отношениях, восприятии себя и&nbsp;раскрытии граней женственности.</p>
           <div class="shop-cta">Узнать&nbsp;даты →</div>
         </a>
 
-        <a href="https://t.me/Diamondmari" class="shop-item shop-4 tg-cta" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — интересуют бизнес-ужины и сообщество.">
-          <div class="shop-tag">№ 04 · Сообщество</div>
-          <h3>Ужины&nbsp;и&nbsp;клуб</h3>
-          <p>Камерные бизнес-ужины, мастер-группы, клуб резидентов. Сообщество тех, кто живёт в&nbsp;логике соединения.</p>
-          <div class="shop-cta">Войти в&nbsp;клуб →</div>
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют телесные и дыхательные практики.">
+          <div class="shop-tag">№ 04 · Тело</div>
+          <h3>Телесные и&nbsp;дыхательные практики</h3>
+          <p>Авторские практики&nbsp;— вернуть контакт с&nbsp;собой, почувствовать тело, освободить энергию, выйти на&nbsp;новый уровень состояния.</p>
+          <div class="shop-cta">Узнать&nbsp;→</div>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют мастер-группы.">
+          <div class="shop-tag">№ 05 · Длинная&nbsp;программа</div>
+          <h3>Мастер-группы</h3>
+          <p>Авторский формат&nbsp;— мастермайнд + форум-группа. Три сферы одновременно: реализация · отношения · качество жизни.</p>
+          <div class="shop-cta">Узнать&nbsp;→</div>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют форум-группы для предпринимателей.">
+          <div class="shop-tag">№ 06 · Бизнес</div>
+          <h3>Форум-группы для&nbsp;предпринимателей</h3>
+          <p>Профессиональная модерация по&nbsp;международным стандартам форум-методологии.</p>
+          <div class="shop-cta">Узнать&nbsp;→</div>
+        </a>
+
+        <a href="https://t.me/Diamondmari" class="shop-item tg-cta" target="_blank" rel="noopener" style="grid-column: span 2;"
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересуют бизнес-ужины и сообщество.">
+          <div class="shop-tag">№ 07 · Сообщество</div>
+          <h3>Бизнес-ужины, бранчи и&nbsp;смысловые встречи</h3>
+          <p>Камерные встречи для&nbsp;сильных и&nbsp;интересных людей&nbsp;— для&nbsp;глубоких разговоров, качественного нетворкинга и&nbsp;формирования окружения.</p>
+          <div class="shop-cta">Войти в&nbsp;круг →</div>
         </a>
 
       </div>
@@ -152,79 +191,95 @@
     </div>
   </section>
 
+  <!-- ───── МАНИФЕСТ ───── -->
+  <section class="b-method" id="manifest" style="background: var(--paper); border-top: 1px solid var(--hairline);">
+    <div class="container">
+      <div class="method-grid reveal">
+        <div class="method-side">
+          <div class="essay-kicker">Манифест</div>
+          <h2>Большая <em>жизнь</em></h2>
+        </div>
+        <div class="method-body">
+          <p class="lead">Я&nbsp;не&nbsp;верю в&nbsp;жизнь, построенную только на&nbsp;борьбе. Но&nbsp;и&nbsp;в&nbsp;жизнь без&nbsp;цели, воли и&nbsp;личной ответственности&nbsp;— тоже не&nbsp;верю.</p>
+          <p>Я&nbsp;верю в&nbsp;людей, которые выбирают <em>расти</em>. Которые умеют создавать результат, но&nbsp;не&nbsp;теряют способность чувствовать.</p>
+          <p>Что деньги не&nbsp;противоречат глубине. Что семья не&nbsp;отменяет реализацию. Что женщина может быть мягкой и&nbsp;очень сильной одновременно. Что мужчина может быть твёрдым и&nbsp;при&nbsp;этом человечным.</p>
+          <p>Я&nbsp;верю в&nbsp;<em>большую жизнь</em>&nbsp;— где есть место любви, семье, делу, красоте, дружбе, деньгам, развитию и&nbsp;удовольствию от&nbsp;самого пути. Именно к&nbsp;такой жизни я&nbsp;приглашаю людей рядом со&nbsp;мной.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ───── КЛУБ ───── -->
   <section class="b-club" id="club">
     <div class="container club-grid reveal">
       <div class="club-text">
-        <div class="essay-kicker">Сообщество</div>
-        <h2>Клуб <em>мягкой силы</em></h2>
-        <p>Я&nbsp;собираю вокруг себя тех, кто уже многого достиг&nbsp;— и&nbsp;кому важно расти не&nbsp;в&nbsp;одиночку. Резиденты клуба получают приоритетный доступ к&nbsp;закрытым группам, ужинам, ретритам и&nbsp;индивидуальным сессиям.</p>
-        <p>Это не&nbsp;курс и&nbsp;не&nbsp;марафон. Это&nbsp;— <em>длинная история</em>, в&nbsp;которой каждый формат усиливает следующий.</p>
+        <div class="essay-kicker">Большая мечта</div>
+        <h2>Объединять <em>своих</em></h2>
+        <p>Сильных, реализованных и&nbsp;глубоких людей вокруг общих ценностей&nbsp;— чтобы со&nbsp;временем сформировать сообщество, которое усиливает каждого участника.</p>
+        <p>Пространство, где приходят не&nbsp;за&nbsp;поверхностным нетворкингом, а&nbsp;за&nbsp;<em>настоящей средой</em>. Где можно говорить честно, думать глубоко, расти быстрее, получать поддержку, встречать своих, создавать семьи, строить проекты.</p>
         <a class="b-btn tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — интересует клуб резидентов. Расскажите об условиях.">Узнать о&nbsp;клубе</a>
+           data-tg="Здравствуйте, Марина!&#10;&#10;Интересует клуб резидентов / сообщество.">Узнать о&nbsp;сообществе</a>
       </div>
       <div class="club-features">
-        <div class="cf"><span class="cf-mark">—</span> Приоритет на&nbsp;все живые форматы</div>
-        <div class="cf"><span class="cf-mark">—</span> Камерные ужины раз в&nbsp;квартал</div>
-        <div class="cf"><span class="cf-mark">—</span> Закрытые мастер-группы</div>
-        <div class="cf"><span class="cf-mark">—</span> Индивидуальные сессии по&nbsp;запросу</div>
-        <div class="cf"><span class="cf-mark">—</span> Среда единомышленников</div>
-        <div class="cf"><span class="cf-mark">—</span> Сопровождение в&nbsp;течение года</div>
+        <div class="cf"><span class="cf-mark">—</span> Развитие и&nbsp;образование</div>
+        <div class="cf"><span class="cf-mark">—</span> Семья и&nbsp;дети</div>
+        <div class="cf"><span class="cf-mark">—</span> Традиции и&nbsp;культура</div>
+        <div class="cf"><span class="cf-mark">—</span> Честность и&nbsp;преданность</div>
+        <div class="cf"><span class="cf-mark">—</span> Реализация в&nbsp;мире</div>
+        <div class="cf"><span class="cf-mark">—</span> Внутренняя опора и&nbsp;тепло</div>
       </div>
     </div>
   </section>
 
-  <!-- ───── КЕЙСЫ ───── -->
+  <!-- ───── ДЛЯ КОГО ───── -->
   <section class="b-cases">
     <div class="container">
-      <h2 class="section-h reveal">Истории <em>трансформации</em></h2>
-      <p class="section-sub reveal">Без имён, по&nbsp;согласию клиентов.</p>
+      <h2 class="section-h reveal">Для&nbsp;<em>кого</em></h2>
+      <p class="section-sub reveal">Для&nbsp;тех, кто больше не&nbsp;хочет выбирать между успехом и&nbsp;счастьем.</p>
       <div class="b-cases-grid reveal">
         <article class="bcase">
           <div class="bcase-no">01</div>
-          <h3>«Я&nbsp;больше не&nbsp;чувствовала жизни»</h3>
-          <div class="bcase-meta">Топ-менеджер · 38&nbsp;лет</div>
-          <p>За&nbsp;4&nbsp;месяца сопровождения вернула чувствительность к&nbsp;собственным желаниям, сменила формат работы без потери уровня, переоткрыла отношения с&nbsp;мужем.</p>
+          <h3>Предприниматели</h3>
+          <div class="bcase-meta">Свой бизнес · ответственность за&nbsp;команды</div>
+          <p>Те, кто уже многого достиг и&nbsp;хочет следующего уровня качества жизни, не&nbsp;разрушая того, что построено.</p>
         </article>
         <article class="bcase">
           <div class="bcase-no">02</div>
-          <h3>«Я&nbsp;не&nbsp;знаю, кто я&nbsp;вне работы»</h3>
-          <div class="bcase-meta">Основательница агентства · 42&nbsp;года</div>
-          <p>Через год после работы&nbsp;— переосмыслила личный бренд, начала встречаться, вышла замуж. Бизнес продолжает расти.</p>
+          <h3>Руководители и&nbsp;эксперты</h3>
+          <div class="bcase-meta">Топ-менеджмент · профессионалы</div>
+          <p>Сильные люди с&nbsp;карьерой и&nbsp;статусом, которым важна не&nbsp;только реализация, но&nbsp;и&nbsp;внутренний смысл.</p>
         </article>
         <article class="bcase">
           <div class="bcase-no">03</div>
-          <h3>«Мы&nbsp;стали соседями по&nbsp;дому»</h3>
-          <div class="bcase-meta">Пара · 18&nbsp;лет вместе</div>
-          <p>Через полгода в&nbsp;парном формате&nbsp;— нашли новый язык, переехали, начали путешествовать вместе. Сейчас сами ведут группу для&nbsp;пар.</p>
+          <h3>Мужчины и&nbsp;женщины</h3>
+          <div class="bcase-meta">Семья · отношения · окружение</div>
+          <p>Кому важны семья, отношения, окружение, развитие, реализация и&nbsp;внутренний смысл одновременно.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ───── БЛОГ ───── -->
-  <section class="b-blog" id="blog">
-    <div class="container">
-      <h2 class="section-h reveal">Блог</h2>
-      <p class="section-sub reveal">Длинные тексты о&nbsp;практике, психологии и&nbsp;соединении внутреннего с&nbsp;внешним.</p>
-      <div class="b-blog-grid reveal">
-        <article class="bpost"><div class="bpost-date">скоро</div><h3>«Достаточно»&nbsp;— не&nbsp;враг «много»</h3><p>Почему «у&nbsp;меня всё есть» не&nbsp;значит «мне больше ничего не&nbsp;нужно». О&nbsp;росте без выгорания.</p></article>
-        <article class="bpost"><div class="bpost-date">скоро</div><h3>Архетипы и&nbsp;корпоративная маска</h3><p>Что происходит с&nbsp;женщиной, когда она 25&nbsp;лет носит костюм&nbsp;— и&nbsp;как вернуть из&nbsp;шкафа то, что туда не&nbsp;убирали.</p></article>
-        <article class="bpost"><div class="bpost-date">скоро</div><h3>Дыхание как опора</h3><p>10&nbsp;минут в&nbsp;день, которые меняют качество дня. Без эзотерики, без позы лотоса. Очень практически.</p></article>
-      </div>
+  <!-- ───── ФОРМУЛА ───── -->
+  <section class="b-blog">
+    <div class="container reveal" style="max-width: 760px; margin: 0 auto; text-align: center;">
+      <div class="essay-kicker" style="color: var(--terracotta); margin-bottom: 28px;">Моя формула</div>
+      <p style="font-family: var(--serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.55; color: var(--graphite); margin: 0 0 12px;">Твёрдость в&nbsp;ценностях.<br/>Мягкость в&nbsp;сердце.<br/>Ясность в&nbsp;действиях.<br/>Глубина в&nbsp;отношениях.<br/>Красота в&nbsp;жизни.<br/>Реализация в&nbsp;мире.</p>
+      <p style="font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--graphite-soft); margin-top: 32px;">Для&nbsp;меня это и&nbsp;есть <em style="color: var(--terracotta);">мягкая сила</em>.</p>
     </div>
   </section>
 
   <!-- ───── CTA ───── -->
-  <section class="cta-section">
+  <section class="cta-section" id="contact">
     <div class="container cta-grid reveal">
       <div>
-        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>себя</em></h2>
-        <p>Подберём формат. Расскажу про&nbsp;ближайшие группы, ретриты, индивидуальные сессии и&nbsp;клуб резидентов.</p>
+        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>своих</em></h2>
+        <p>Для&nbsp;участия в&nbsp;проектах, сотрудничества и&nbsp;личного общения&nbsp;— свяжитесь любым удобным способом.</p>
       </div>
       <div>
         <a class="cta-button tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы и подобрать формат под себя.">Написать в&nbsp;Telegram →</a>
+           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах и подобрать формат под себя.">Telegram&nbsp;@Diamondmari →</a>
+        <br/><br/>
+        <a class="cta-second" href="https://instagram.com/marina_brilka" target="_blank" rel="noopener">Instagram&nbsp;@marina_brilka ↗</a>
         <br/><br/>
         <a class="cta-second" href="https://marina-site-beryl.vercel.app" target="_blank" rel="noopener">Календарь июня&nbsp;2026 ↗</a>
       </div>
@@ -234,12 +289,16 @@
   <footer>
     <div class="footer-inner">
       <div>Москва · 2026</div>
-      <div>Marina Lodvikova</div>
+      <div>Marina Lodvikova (Brilka)</div>
       <a class="tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы.">@Diamondmari</a>
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее.">@Diamondmari</a>
     </div>
   </footer>
 
   <script src="/script.js" defer></script>
+  <style>
+    .b-photo-strip { padding: clamp(40px, 6vw, 80px) 0; }
+    .photo-slot--wide { aspect-ratio: 16/9; max-height: 60vh; }
+  </style>
 </body>
 </html>

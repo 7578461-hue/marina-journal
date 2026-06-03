@@ -3,16 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Марина Лодвикова — практика мягкой силы</title>
-  <meta name="description" content="Кандидат экономических наук, в прошлом — топ-менеджер Росатома. 13 лет авторских практик и ашрамов. Сопровождение трансформации женщин, мужчин и пар." />
-
-  <meta property="og:title" content="Марина Лодвикова — практика мягкой силы" />
-  <meta property="og:description" content="13 лет авторских практик. К.э.н., бывший топ-менеджер Росатома, опыт ашрамов." />
-  <meta property="og:type" content="profile" />
-  <meta property="og:locale" content="ru_RU" />
+  <title>Марина Лодвикова — архитектор мягкой силы</title>
+  <meta name="description" content="К.э.н., 10+ лет в РЭУ им. Г. В. Плеханова, в прошлом руководитель в Росатоме, выступления в ООН. Психолог МГУ. 15+ лет психологических и медитативных практик. Мама четверых детей." />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#FAF7F0" />
 
@@ -20,6 +14,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* photo-slot для classic */
+    .photo-slot {
+      background: #F4EFE3;
+      border: 1px dashed #B5654C;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+    }
+    .photo-slot-inner { padding: 28px; }
+    .photo-slot-label {
+      font-family: "Inter", sans-serif; font-size: 0.78rem; letter-spacing: 0.36em;
+      text-transform: uppercase; color: #B5654C; font-weight: 500; margin-bottom: 14px;
+    }
+    .photo-slot-hint {
+      font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 0.95rem;
+      color: #56504A; line-height: 1.45;
+    }
+  </style>
 
   <script>
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
@@ -31,46 +44,43 @@
 </head>
 <body>
 
-  <!-- ───── Topbar ───── -->
   <header class="topbar">
     <a href="#" class="brand">Marina <span class="amp">&amp;</span> Lodvikova</a>
     <nav class="topnav">
       <a href="#article">О себе</a>
       <a href="#regalia">Опыт</a>
-      <a href="#work">Работа</a>
-      <a href="#cases">Истории</a>
+      <a href="#work">Проекты</a>
+      <a href="#bigidea">Идея</a>
       <a href="https://t.me/Diamondmari" target="_blank" rel="noopener" class="nav-cta tg-cta"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы.">Связаться</a>
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах.">Связаться</a>
     </nav>
   </header>
 
-  <!-- ───── HERO ───── -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text reveal">
         <div class="hero-issue">
-          <span>Выпуск №&nbsp;01</span>
+          <span>Marina Lodvikova (Brilka)</span>
           <span class="sep">·</span>
           <span>Москва · 2026</span>
-          <span class="sep">·</span>
-          <span>Практика мягкой&nbsp;силы</span>
         </div>
-        <h1 class="hero-title">Марина<br/><em>Лодвикова</em></h1>
-        <p class="hero-tag">Кандидат экономических наук, в&nbsp;прошлом топ-менеджер Росатома, 13&nbsp;лет авторских практик. О&nbsp;том, как соединять силу и&nbsp;чувствительность — чтобы одно не&nbsp;разрушало другое.</p>
+        <h1 class="hero-title">Архитектор<br/><em>мягкой силы</em></h1>
+        <p class="hero-tag">Кандидат экономических наук. Психолог. Предприниматель. Модератор форум-групп. Мама четверых детей. 15+&nbsp;лет психологических и&nbsp;медитативных практик.</p>
         <div class="hero-meta">
-          <span><span class="dot">●</span> Личные сессии</span>
+          <span><span class="dot">●</span> Наставничество</span>
           <span><span class="dot">●</span> Группы и&nbsp;ретриты</span>
-          <span><span class="dot">●</span> Бизнес-форматы</span>
+          <span><span class="dot">●</span> Ужины и&nbsp;сообщество</span>
         </div>
       </div>
-      <figure class="hero-photo reveal">
-        <img src="/assets/portrait.jpg" alt="Марина Лодвикова" />
-        <figcaption class="caption">Портрет · 2025</figcaption>
+      <figure class="hero-photo reveal photo-slot">
+        <div class="photo-slot-inner">
+          <div class="photo-slot-label">Фото · портрет</div>
+          <div class="photo-slot-hint">портретный кадр<br/>пропорции 4:5, не&nbsp;менее 1000&nbsp;px</div>
+        </div>
       </figure>
     </div>
   </section>
 
-  <!-- ───── ARTICLE — личная история ───── -->
   <section class="article" id="article">
     <div class="container article-grid reveal">
       <aside class="article-side">
@@ -78,179 +88,175 @@
         <small>Личная история</small>
       </aside>
       <div class="article-body">
-        <h2>Не выбирать, а&nbsp;<em>соединять</em></h2>
-        <p>Я&nbsp;долго жила в&nbsp;логике большого корпоративного результата. Топ-менеджер Росатома, кандидат экономических наук, диссертация, командировки, проекты с&nbsp;нулей до&nbsp;запуска. Понимала, как добиваться. Не&nbsp;понимала, как при&nbsp;этом оставаться живой.</p>
-        <p>Поворот случился в&nbsp;ашраме. Тогда казалось, что нужно выбрать одну сторону&nbsp;— или сила, или мягкость. Прошло несколько лет, прежде чем я&nbsp;поняла: <em>сила и&nbsp;чувствительность&nbsp;— не&nbsp;противоположности.</em> Они дополняют друг друга. И&nbsp;только в&nbsp;их&nbsp;соединении жизнь становится по-настоящему наполненной.</p>
-        <p>За&nbsp;13&nbsp;лет практики я&nbsp;провела тысячи часов в&nbsp;ашрамах, выстроила <strong>авторский метод</strong>, провела сотни групп и&nbsp;ретритов. Сегодня я&nbsp;работаю с&nbsp;женщинами и&nbsp;мужчинами, которые уже многого достигли&nbsp;— и&nbsp;ищут способ жить шире, чем «успех в&nbsp;дисциплине результата».</p>
+        <h2>Иркутск, Байкал и&nbsp;<em>длинный путь</em></h2>
+        <p>Я&nbsp;родилась в&nbsp;Иркутске, в&nbsp;семье, где образование, труд и&nbsp;семейные ценности были естественной частью жизни. Родители более 50&nbsp;лет вместе. В&nbsp;детстве профессионально занималась спортивными бальными танцами&nbsp;— именно спорт познакомил меня с&nbsp;дисциплиной и&nbsp;стремлением к&nbsp;результату.</p>
+        <p>Позже&nbsp;— три высших образования. РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова (мировая экономика), Лондонская школа бизнеса и&nbsp;финансов, психологическое образование МГУ. Защита кандидатской диссертации по&nbsp;экономике под научным руководством <em>Р.&nbsp;И.&nbsp;Хасбулатова</em>. Более 10&nbsp;лет преподаю в&nbsp;РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова на&nbsp;кафедре мировой экономики.</p>
+        <p>Работала на&nbsp;руководящей позиции в&nbsp;Госкорпорации «Росатом», участвовала в&nbsp;международных проектах и&nbsp;несколько лет подряд выступала на&nbsp;английском в&nbsp;штаб-квартире ООН в&nbsp;составе российской делегации.</p>
+        <p>Параллельно меня всегда интересовал другой вопрос: <strong>что делает человека по-настоящему счастливым?</strong> Так началось 15-летнее исследование психологии, медитации и&nbsp;телесных практик. Одиннадцать Випассан по&nbsp;С.&nbsp;Н.&nbsp;Гоенке, включая ретриты по&nbsp;20&nbsp;и&nbsp;30&nbsp;дней. Время в&nbsp;Индии. Более 15&nbsp;лет вегетарианства.</p>
+        <p>Сегодня я&nbsp;соединяю два мира&nbsp;— достижений и&nbsp;глубины. Из&nbsp;этого соединения родилась моя главная тема: <em>мягкая сила</em>.</p>
       </div>
     </div>
   </section>
 
-  <!-- ───── РЕГАЛИИ — таблица CV ───── -->
   <section class="regalia-section" id="regalia">
     <div class="container">
       <div class="regalia-head reveal">
         <div class="eyebrow">Опыт и&nbsp;образование</div>
-        <h2>Биография в&nbsp;<em>четыре строки</em></h2>
+        <h2>Биография в&nbsp;<em>фактах</em></h2>
       </div>
 
       <div class="regalia-table reveal">
         <div class="regalia-row">
-          <div class="r-period">13&nbsp;лет</div>
-          <div class="r-name">Авторская практика<em>Личные сессии, группы, ретриты, бизнес-форматы. Сотни клиентов и&nbsp;участников.</em></div>
-          <div class="r-tag">Сегодня</div>
-        </div>
-        <div class="regalia-row">
-          <div class="r-period">Многолетние<br/>стажировки</div>
-          <div class="r-name">Ашрамы и&nbsp;восточные традиции<em>Индия, Тибет. Дыхательные техники, работа с&nbsp;вниманием, тело.</em></div>
+          <div class="r-period">15+&nbsp;лет</div>
+          <div class="r-name">Психологические и&nbsp;медитативные практики<em>11&nbsp;Випассан, включая ретриты 20&nbsp;и&nbsp;30&nbsp;дней · Индия · 15+&nbsp;лет вегетарианства</em></div>
           <div class="r-tag">Метод</div>
         </div>
         <div class="regalia-row">
           <div class="r-period">К.&nbsp;э.&nbsp;н.</div>
-          <div class="r-name">Кандидат экономических наук<em>Системное мышление, аналитика, методология&nbsp;— перенесены в&nbsp;работу с&nbsp;человеком.</em></div>
+          <div class="r-name">Кандидат экономических наук<em>Защита под научным руководством Р.&nbsp;И.&nbsp;Хасбулатова</em></div>
           <div class="r-tag">Образование</div>
         </div>
         <div class="regalia-row">
-          <div class="r-period">Топ-менеджмент</div>
-          <div class="r-name">Росатом<em>Многолетний опыт управления. Понимаю изнутри язык бизнеса и&nbsp;давление позиции.</em></div>
+          <div class="r-period">3&nbsp;диплома</div>
+          <div class="r-name">Три высших образования<em>РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова · Лондонская школа бизнеса и&nbsp;финансов · МГУ&nbsp;— психология</em></div>
+          <div class="r-tag">Академия</div>
+        </div>
+        <div class="regalia-row">
+          <div class="r-period">10+&nbsp;лет</div>
+          <div class="r-name">Преподавание в&nbsp;РЭУ им.&nbsp;Г.&nbsp;В.&nbsp;Плеханова<em>Кафедра мировой экономики</em></div>
+          <div class="r-tag">Преподавание</div>
+        </div>
+        <div class="regalia-row">
+          <div class="r-period">Росатом</div>
+          <div class="r-name">Руководящая карьера в&nbsp;Госкорпорации<em>Международные проекты · английский · стратегия</em></div>
           <div class="r-tag">Корпорация</div>
+        </div>
+        <div class="regalia-row">
+          <div class="r-period">ООН</div>
+          <div class="r-name">Выступления в&nbsp;штаб-квартире<em>В&nbsp;составе российской делегации, Нью-Йорк</em></div>
+          <div class="r-tag">Международный&nbsp;уровень</div>
+        </div>
+        <div class="regalia-row">
+          <div class="r-period">Семья</div>
+          <div class="r-name">Жена и&nbsp;мама четверых детей<em>Главная ежедневная практика мягкой силы</em></div>
+          <div class="r-tag">Жизнь</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───── НАПРАВЛЕНИЯ ───── -->
   <section class="work" id="work">
     <div class="container">
       <div class="work-head reveal">
-        <h2>Четыре формата&nbsp;<em>сопровождения</em></h2>
-        <p class="work-lede">Для&nbsp;тех, кто уже достиг&nbsp;— и&nbsp;ищет способ жить шире, чем «дисциплина результата».</p>
+        <h2>Семь форматов&nbsp;<em>сопровождения</em></h2>
+        <p class="work-lede">От&nbsp;индивидуальной работы до&nbsp;сообщества единомышленников.</p>
       </div>
 
-      <div class="work-grid reveal">
-        <article class="work-card">
+      <div class="work-grid">
+        <article class="work-card reveal">
           <div class="work-num">№ 01</div>
-          <h3>Личная трансформация</h3>
-          <p>Индивидуальные сессии и&nbsp;камерные группы. Архетипы, телесные практики, работа с&nbsp;внутренними конфликтами.</p>
-          <ul>
-            <li>тестирование архетипов и&nbsp;диагностика</li>
-            <li>дыхательные практики</li>
-            <li>работа с&nbsp;ведущими сценариями</li>
-            <li>личный план развития</li>
-          </ul>
+          <h3>Женские архетипы</h3>
+          <p>Глубокий практический формат исследования женской природы&nbsp;— Любовница, Хозяйка, Девочка, Королева. Про&nbsp;проживание, осознание и&nbsp;расширение возможностей.</p>
         </article>
-        <article class="work-card">
+        <article class="work-card reveal">
           <div class="work-num">№ 02</div>
-          <h3>Бизнес-сопровождение</h3>
-          <p>Для&nbsp;предпринимателей и&nbsp;топ-менеджеров. Перенастройка опор, «следующая версия жизни».</p>
-          <ul>
-            <li>стратегические сессии 1:1</li>
-            <li>камерные бизнес-ужины</li>
-            <li>мастер-группа на&nbsp;4&nbsp;месяца</li>
-            <li>сопровождение в&nbsp;точках переходов</li>
-          </ul>
+          <h3>Гейша</h3>
+          <p>Трансформационная игра для&nbsp;женщин&nbsp;— о&nbsp;состояниях, отношениях, восприятии себя и&nbsp;раскрытии граней женственности.</p>
         </article>
-        <article class="work-card">
+        <article class="work-card reveal">
           <div class="work-num">№ 03</div>
-          <h3>Женские форматы</h3>
-          <p>Архетипы, игра «Гейша», ретриты. Возвращение чувствительности и&nbsp;женского магнетизма.</p>
-          <ul>
-            <li>авторские женские дни</li>
-            <li>трансформационные игры</li>
-            <li>ретриты и&nbsp;выезды</li>
-            <li>работа с&nbsp;ролями и&nbsp;сценариями</li>
-          </ul>
+          <h3>Телесные и&nbsp;дыхательные практики</h3>
+          <p>Авторские практики&nbsp;— вернуть контакт с&nbsp;собой, почувствовать тело, освободить энергию.</p>
         </article>
-        <article class="work-card">
+        <article class="work-card reveal">
           <div class="work-num">№ 04</div>
-          <h3>Партнёрство и&nbsp;отношения</h3>
-          <p>Для&nbsp;пар и&nbsp;тех, кто строит зрелые отношения. Соединение мужского и&nbsp;женского начал.</p>
-          <ul>
-            <li>сессии для&nbsp;пары</li>
-            <li>работа с&nbsp;кризисами</li>
-            <li>совместные ретриты</li>
-            <li>сопровождение после</li>
-          </ul>
+          <h3>Индивидуальное наставничество</h3>
+          <p>Работа на&nbsp;стыке психологии, жизненного опыта, стратегии и&nbsp;глубокой трансформации личности.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-num">№ 05</div>
+          <h3>Мастер-группы</h3>
+          <p>Авторский формат&nbsp;— мастермайнд + форум-группа. Реализация · отношения · качество жизни. Одновременно.</p>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-num">№ 06</div>
+          <h3>Форум-группы для&nbsp;предпринимателей</h3>
+          <p>Профессиональная модерация по&nbsp;международным стандартам форум-методологии.</p>
         </article>
       </div>
+
+      <article class="work-card reveal" style="margin-top: 0; border-top: 0;">
+        <div class="work-num">№ 07</div>
+        <h3>Бизнес-ужины и&nbsp;бранчи</h3>
+        <p>Камерные встречи для&nbsp;сильных и&nbsp;интересных людей. Для&nbsp;глубоких разговоров, качественного нетворкинга и&nbsp;формирования окружения.</p>
+      </article>
     </div>
   </section>
 
-  <!-- ───── КЕЙСЫ ───── -->
-  <section class="cases" id="cases">
+  <section class="cases" id="bigidea">
     <div class="container">
       <div class="cases-head reveal">
-        <div class="eyebrow">Истории трансформации</div>
-        <h2>С&nbsp;кем я&nbsp;<em>работаю</em></h2>
-        <p class="lede">Без имён, по&nbsp;согласию клиентов. Если узнаете в&nbsp;этом себя&nbsp;— возможно, нам стоит поговорить.</p>
+        <div class="eyebrow">Big Idea</div>
+        <h2>В&nbsp;сильных, образованных, <em>самодостаточных</em></h2>
+        <p class="lede">Настоящая зрелость&nbsp;— не&nbsp;только деньги, статус и&nbsp;результат. И&nbsp;не&nbsp;только внутренний мир и&nbsp;поиск себя. <em>Соединение</em> этих начал.</p>
       </div>
 
       <div class="cases-list reveal">
         <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;01
-            <small>Топ-менеджер, 38&nbsp;лет<br/>банковский сектор</small>
-          </div>
+          <div class="case-tag">№ 01<small>Кто</small></div>
           <div class="case-content">
-            <h3>«Я больше не&nbsp;чувствовала жизни»</h3>
-            <p>Пришла после двух лет на&nbsp;грани выгорания. Внешне всё хорошо: должность, доход, семья. Внутри&nbsp;— пустота, бессонница, апатия. За&nbsp;4&nbsp;месяца сопровождения вернула чувствительность к&nbsp;собственным желаниям, сменила формат работы (без потери уровня), переоткрыла отношения с&nbsp;мужем.</p>
+            <h3>Сильные, образованные, самодостаточные</h3>
+            <p>Мужчины и&nbsp;женщины, которые умеют создавать, брать ответственность, развиваться, строить семьи, растить детей, сохранять достоинство и&nbsp;передавать ценности дальше.</p>
           </div>
         </article>
         <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;02
-            <small>Основательница агентства, 42&nbsp;года<br/>креативная индустрия</small>
-          </div>
+          <div class="case-tag">№ 02<small>Что</small></div>
           <div class="case-content">
-            <h3>«Я не&nbsp;знаю, кто я&nbsp;вне работы»</h3>
-            <p>Бизнес рос, личная жизнь стояла. После женских архетипов и&nbsp;серии индивидуальных сессий переосмыслила личный бренд, начала встречаться, через год вышла замуж. Бизнес продолжает расти&nbsp;— но&nbsp;уже не&nbsp;ценой себя.</p>
+            <h3>Твёрдость в&nbsp;ценностях, мягкость в&nbsp;сердце</h3>
+            <p>Когда человек одновременно проявлен в&nbsp;мире и&nbsp;глубок внутри. Силён в&nbsp;действиях и&nbsp;живой в&nbsp;отношениях. Когда работа, семья и&nbsp;собственная глубина растут вместе.</p>
           </div>
         </article>
         <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;03
-            <small>Пара, 45&nbsp;и&nbsp;47&nbsp;лет<br/>18&nbsp;лет вместе</small>
-          </div>
+          <div class="case-tag">№ 03<small>Зачем</small></div>
           <div class="case-content">
-            <h3>«Мы&nbsp;стали соседями по&nbsp;дому»</h3>
-            <p>15-летний брак на&nbsp;грани развода. Дети, общий бизнес, ноль близости. Через полгода работы в&nbsp;парном формате нашли новый язык, переехали, начали путешествовать вместе. Сейчас сами ведут небольшую группу для&nbsp;пар.</p>
+            <h3>Сильное окружение меняет жизнь</h3>
+            <p>Я&nbsp;собираю вокруг себя сообщество, где люди рядом друг с&nbsp;другом становятся больше, глубже, честнее и&nbsp;смелее. Это и&nbsp;есть моя большая мечта.</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ───── Pull-quote ───── -->
   <section class="quote-section">
     <div class="container reveal">
-      <p class="pull-quote">«Мы&nbsp;не&nbsp;про отказ от&nbsp;достижений. И&nbsp;не&nbsp;про уход только в&nbsp;мягкость. Мы&nbsp;<em>про&nbsp;соединение</em> этих двух начал.»</p>
+      <p class="pull-quote">«Большая жизнь рождается не&nbsp;из&nbsp;выбора между её&nbsp;разными частями, а&nbsp;из&nbsp;умения <em>красиво соединять</em> их&nbsp;в&nbsp;одно целое.»</p>
       <p class="pull-quote-author">— Марина Лодвикова</p>
     </div>
   </section>
 
-  <!-- ───── CTA ───── -->
   <section class="cta-section" id="contact">
     <div class="container cta-grid reveal">
       <div>
-        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>себя</em></h2>
-        <p>Подберём подходящий формат работы. Расскажу про&nbsp;ближайшие группы, ретриты и&nbsp;возможность личных сессий.</p>
+        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>своих</em></h2>
+        <p>Для&nbsp;участия в&nbsp;проектах, сотрудничества и&nbsp;личного общения&nbsp;— свяжитесь любым удобным способом.</p>
       </div>
       <div>
         <a class="cta-button tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы и подобрать формат под себя.">Написать в&nbsp;Telegram →</a>
+           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших проектах и подобрать формат под себя.">Telegram&nbsp;@Diamondmari →</a>
+        <br/><br/>
+        <a class="cta-second" href="https://instagram.com/marina_brilka" target="_blank" rel="noopener">Instagram&nbsp;@marina_brilka ↗</a>
         <br/><br/>
         <a class="cta-second" href="https://marina-site-beryl.vercel.app" target="_blank" rel="noopener">Календарь июня&nbsp;2026 ↗</a>
       </div>
     </div>
   </section>
 
-  <!-- ───── Footer ───── -->
   <footer>
     <div class="footer-inner">
       <div>Москва · 2026</div>
-      <div>Marina Lodvikova</div>
+      <div>Marina Lodvikova (Brilka)</div>
       <a class="tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы.">@Diamondmari</a>
+         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее.">@Diamondmari</a>
     </div>
   </footer>
 
