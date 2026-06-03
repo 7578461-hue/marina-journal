@@ -3,257 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Марина Лодвикова — практика мягкой силы</title>
-  <meta name="description" content="Кандидат экономических наук, в прошлом — топ-менеджер Росатома. 13 лет авторских практик и ашрамов. Сопровождение трансформации женщин, мужчин и пар." />
-
-  <meta property="og:title" content="Марина Лодвикова — практика мягкой силы" />
-  <meta property="og:description" content="13 лет авторских практик. К.э.н., бывший топ-менеджер Росатома, опыт ашрамов." />
-  <meta property="og:type" content="profile" />
-  <meta property="og:locale" content="ru_RU" />
-
+  <title>Marina Lodvikova — выбор варианта</title>
   <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#FAF7F0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-
-  <script>
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
-      window.addEventListener('load', function () { if (!window.location.hash) window.scrollTo(0, 0); });
+  <style>
+    :root {
+      --ivory: #FAF7F0;
+      --paper: #F4EFE3;
+      --graphite: #2A2520;
+      --graphite-soft: #56504A;
+      --terracotta: #B5654C;
+      --hairline: rgba(42, 37, 32, 0.14);
     }
-  </script>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Cormorant Garamond", "Times New Roman", serif;
+      background: var(--ivory);
+      color: var(--graphite);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .wrap {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px 60px;
+      width: 100%;
+    }
+    .eyebrow {
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+    h1 em { font-style: italic; color: var(--terracotta); }
+    .lede {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--graphite-soft);
+      line-height: 1.5;
+      max-width: 720px;
+      margin-bottom: 60px;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .option {
+      display: block;
+      padding: 40px 36px;
+      background: var(--paper);
+      border: 1px solid var(--hairline);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+    }
+    .option:hover {
+      transform: translateY(-4px);
+      border-color: var(--terracotta);
+      background: var(--ivory);
+    }
+    .opt-num {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 0.85rem;
+      letter-spacing: 0.32em;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+    }
+    .option h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-size: 1.85rem;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      letter-spacing: -0.005em;
+    }
+    .option h2 em { font-style: italic; color: var(--terracotta); }
+    .option .summary {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--graphite-soft);
+      margin-bottom: 22px;
+    }
+    .option ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    .option li {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 0.95rem;
+      color: var(--graphite);
+      padding: 4px 0 4px 18px;
+      position: relative;
+      line-height: 1.45;
+    }
+    .option li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--terracotta);
+    }
+    .opt-link {
+      font-family: "Inter", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 500;
+      border-top: 1px solid var(--hairline);
+      padding-top: 16px;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 32px;
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--graphite-soft);
+      border-top: 1px solid var(--hairline);
+    }
+    @media (max-width: 900px) {
+      .options { grid-template-columns: 1fr; }
+      .wrap { padding: 50px 24px 40px; }
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <div class="eyebrow">Marina Lodvikova · черновики</div>
+    <h1>Три варианта<br/><em>расположения</em></h1>
+    <p class="lede">Один шрифтовой код и&nbsp;одна палитра. Разные структуры подачи: что показано сверху, какой ритм блоков, что в&nbsp;центре внимания. Открой&nbsp;три&nbsp;— выбери ближайший.</p>
 
-  <!-- ───── Topbar ───── -->
-  <header class="topbar">
-    <a href="#" class="brand">Marina <span class="amp">&amp;</span> Lodvikova</a>
-    <nav class="topnav">
-      <a href="#article">О себе</a>
-      <a href="#regalia">Опыт</a>
-      <a href="#work">Работа</a>
-      <a href="#cases">Истории</a>
-      <a href="https://t.me/Diamondmari" target="_blank" rel="noopener" class="nav-cta tg-cta"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы.">Связаться</a>
-    </nav>
-  </header>
+    <div class="options">
+      <a href="/classic/" class="option">
+        <div class="opt-num">Вариант №&nbsp;01</div>
+        <h2>Классика&nbsp;<em>визитки</em></h2>
+        <p class="summary">Hero с&nbsp;портретом справа, дальше «глава за&nbsp;главой»: история, регалии, направления, кейсы, цитата, контакт.</p>
+        <ul>
+          <li>Журнальный hero с&nbsp;портретом</li>
+          <li>Регалии в&nbsp;виде CV-таблицы</li>
+          <li>4&nbsp;направления + 3&nbsp;кейса</li>
+          <li>Pull-quote и&nbsp;контакт</li>
+        </ul>
+        <span class="opt-link">Открыть →</span>
+      </a>
 
-  <!-- ───── HERO ───── -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text reveal">
-        <div class="hero-issue">
-          <span>Выпуск №&nbsp;01</span>
-          <span class="sep">·</span>
-          <span>Москва · 2026</span>
-          <span class="sep">·</span>
-          <span>Практика мягкой&nbsp;силы</span>
-        </div>
-        <h1 class="hero-title">Марина<br/><em>Лодвикова</em></h1>
-        <p class="hero-tag">Кандидат экономических наук, в&nbsp;прошлом топ-менеджер Росатома, 13&nbsp;лет авторских практик. О&nbsp;том, как соединять силу и&nbsp;чувствительность — чтобы одно не&nbsp;разрушало другое.</p>
-        <div class="hero-meta">
-          <span><span class="dot">●</span> Личные сессии</span>
-          <span><span class="dot">●</span> Группы и&nbsp;ретриты</span>
-          <span><span class="dot">●</span> Бизнес-форматы</span>
-        </div>
-      </div>
-      <figure class="hero-photo reveal">
-        <img src="assets/portrait.jpg" alt="Марина Лодвикова" />
-        <figcaption class="caption">Портрет · 2025</figcaption>
-      </figure>
+      <a href="/narrative/" class="option">
+        <div class="opt-num">Вариант №&nbsp;02</div>
+        <h2>Длинное&nbsp;<em>эссе</em></h2>
+        <p class="summary">Минимальный hero → полноэкранное фото → длинная статья с&nbsp;буквицей → блок про семью со&nbsp;статистикой → метод → направления → кейсы → блог → контакт.</p>
+        <ul>
+          <li>Эссе с&nbsp;буквицей и&nbsp;pull-quote</li>
+          <li>Семья + 6&nbsp;цифровых фактов</li>
+          <li>Метод как 3&nbsp;колонки</li>
+          <li>4&nbsp;направления + блог</li>
+        </ul>
+        <span class="opt-link">Открыть →</span>
+      </a>
+
+      <a href="/boutique/" class="option">
+        <div class="opt-num">Вариант №&nbsp;03</div>
+        <h2>Бутик&nbsp;<em>и&nbsp;клуб</em></h2>
+        <p class="summary">Большое фото на&nbsp;пол-экрана + текст рядом → 6&nbsp;фактов-карточек → манифест → каталог 4&nbsp;направлений как товары → клуб резидентов → кейсы → блог.</p>
+        <ul>
+          <li>Cover-split: фото 50% + текст 50%</li>
+          <li>6&nbsp;фактов сеткой</li>
+          <li>Каталог направлений</li>
+          <li>Отдельный блок «Клуб»</li>
+        </ul>
+        <span class="opt-link">Открыть →</span>
+      </a>
     </div>
-  </section>
-
-  <!-- ───── ARTICLE — личная история ───── -->
-  <section class="article" id="article">
-    <div class="container article-grid reveal">
-      <aside class="article-side">
-        Глава I
-        <small>Личная история</small>
-      </aside>
-      <div class="article-body">
-        <h2>Не выбирать, а&nbsp;<em>соединять</em></h2>
-        <p>Я&nbsp;долго жила в&nbsp;логике большого корпоративного результата. Топ-менеджер Росатома, кандидат экономических наук, диссертация, командировки, проекты с&nbsp;нулей до&nbsp;запуска. Понимала, как добиваться. Не&nbsp;понимала, как при&nbsp;этом оставаться живой.</p>
-        <p>Поворот случился в&nbsp;ашраме. Тогда казалось, что нужно выбрать одну сторону&nbsp;— или сила, или мягкость. Прошло несколько лет, прежде чем я&nbsp;поняла: <em>сила и&nbsp;чувствительность&nbsp;— не&nbsp;противоположности.</em> Они дополняют друг друга. И&nbsp;только в&nbsp;их&nbsp;соединении жизнь становится по-настоящему наполненной.</p>
-        <p>За&nbsp;13&nbsp;лет практики я&nbsp;провела тысячи часов в&nbsp;ашрамах, выстроила <strong>авторский метод</strong>, провела сотни групп и&nbsp;ретритов. Сегодня я&nbsp;работаю с&nbsp;женщинами и&nbsp;мужчинами, которые уже многого достигли&nbsp;— и&nbsp;ищут способ жить шире, чем «успех в&nbsp;дисциплине результата».</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── РЕГАЛИИ — таблица CV ───── -->
-  <section class="regalia-section" id="regalia">
-    <div class="container">
-      <div class="regalia-head reveal">
-        <div class="eyebrow">Опыт и&nbsp;образование</div>
-        <h2>Биография в&nbsp;<em>четыре строки</em></h2>
-      </div>
-
-      <div class="regalia-table reveal">
-        <div class="regalia-row">
-          <div class="r-period">13&nbsp;лет</div>
-          <div class="r-name">Авторская практика<em>Личные сессии, группы, ретриты, бизнес-форматы. Сотни клиентов и&nbsp;участников.</em></div>
-          <div class="r-tag">Сегодня</div>
-        </div>
-        <div class="regalia-row">
-          <div class="r-period">Многолетние<br/>стажировки</div>
-          <div class="r-name">Ашрамы и&nbsp;восточные традиции<em>Индия, Тибет. Дыхательные техники, работа с&nbsp;вниманием, тело.</em></div>
-          <div class="r-tag">Метод</div>
-        </div>
-        <div class="regalia-row">
-          <div class="r-period">К.&nbsp;э.&nbsp;н.</div>
-          <div class="r-name">Кандидат экономических наук<em>Системное мышление, аналитика, методология&nbsp;— перенесены в&nbsp;работу с&nbsp;человеком.</em></div>
-          <div class="r-tag">Образование</div>
-        </div>
-        <div class="regalia-row">
-          <div class="r-period">Топ-менеджмент</div>
-          <div class="r-name">Росатом<em>Многолетний опыт управления. Понимаю изнутри язык бизнеса и&nbsp;давление позиции.</em></div>
-          <div class="r-tag">Корпорация</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── НАПРАВЛЕНИЯ ───── -->
-  <section class="work" id="work">
-    <div class="container">
-      <div class="work-head reveal">
-        <h2>Четыре формата&nbsp;<em>сопровождения</em></h2>
-        <p class="work-lede">Для&nbsp;тех, кто уже достиг&nbsp;— и&nbsp;ищет способ жить шире, чем «дисциплина результата».</p>
-      </div>
-
-      <div class="work-grid reveal">
-        <article class="work-card">
-          <div class="work-num">№ 01</div>
-          <h3>Личная трансформация</h3>
-          <p>Индивидуальные сессии и&nbsp;камерные группы. Архетипы, телесные практики, работа с&nbsp;внутренними конфликтами.</p>
-          <ul>
-            <li>тестирование архетипов и&nbsp;диагностика</li>
-            <li>дыхательные практики</li>
-            <li>работа с&nbsp;ведущими сценариями</li>
-            <li>личный план развития</li>
-          </ul>
-        </article>
-        <article class="work-card">
-          <div class="work-num">№ 02</div>
-          <h3>Бизнес-сопровождение</h3>
-          <p>Для&nbsp;предпринимателей и&nbsp;топ-менеджеров. Перенастройка опор, «следующая версия жизни».</p>
-          <ul>
-            <li>стратегические сессии 1:1</li>
-            <li>камерные бизнес-ужины</li>
-            <li>мастер-группа на&nbsp;4&nbsp;месяца</li>
-            <li>сопровождение в&nbsp;точках переходов</li>
-          </ul>
-        </article>
-        <article class="work-card">
-          <div class="work-num">№ 03</div>
-          <h3>Женские форматы</h3>
-          <p>Архетипы, игра «Гейша», ретриты. Возвращение чувствительности и&nbsp;женского магнетизма.</p>
-          <ul>
-            <li>авторские женские дни</li>
-            <li>трансформационные игры</li>
-            <li>ретриты и&nbsp;выезды</li>
-            <li>работа с&nbsp;ролями и&nbsp;сценариями</li>
-          </ul>
-        </article>
-        <article class="work-card">
-          <div class="work-num">№ 04</div>
-          <h3>Партнёрство и&nbsp;отношения</h3>
-          <p>Для&nbsp;пар и&nbsp;тех, кто строит зрелые отношения. Соединение мужского и&nbsp;женского начал.</p>
-          <ul>
-            <li>сессии для&nbsp;пары</li>
-            <li>работа с&nbsp;кризисами</li>
-            <li>совместные ретриты</li>
-            <li>сопровождение после</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── КЕЙСЫ ───── -->
-  <section class="cases" id="cases">
-    <div class="container">
-      <div class="cases-head reveal">
-        <div class="eyebrow">Истории трансформации</div>
-        <h2>С&nbsp;кем я&nbsp;<em>работаю</em></h2>
-        <p class="lede">Без имён, по&nbsp;согласию клиентов. Если узнаете в&nbsp;этом себя&nbsp;— возможно, нам стоит поговорить.</p>
-      </div>
-
-      <div class="cases-list reveal">
-        <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;01
-            <small>Топ-менеджер, 38&nbsp;лет<br/>банковский сектор</small>
-          </div>
-          <div class="case-content">
-            <h3>«Я больше не&nbsp;чувствовала жизни»</h3>
-            <p>Пришла после двух лет на&nbsp;грани выгорания. Внешне всё хорошо: должность, доход, семья. Внутри&nbsp;— пустота, бессонница, апатия. За&nbsp;4&nbsp;месяца сопровождения вернула чувствительность к&nbsp;собственным желаниям, сменила формат работы (без потери уровня), переоткрыла отношения с&nbsp;мужем.</p>
-          </div>
-        </article>
-        <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;02
-            <small>Основательница агентства, 42&nbsp;года<br/>креативная индустрия</small>
-          </div>
-          <div class="case-content">
-            <h3>«Я не&nbsp;знаю, кто я&nbsp;вне работы»</h3>
-            <p>Бизнес рос, личная жизнь стояла. После женских архетипов и&nbsp;серии индивидуальных сессий переосмыслила личный бренд, начала встречаться, через год вышла замуж. Бизнес продолжает расти&nbsp;— но&nbsp;уже не&nbsp;ценой себя.</p>
-          </div>
-        </article>
-        <article class="case-item">
-          <div class="case-tag">
-            История&nbsp;03
-            <small>Пара, 45&nbsp;и&nbsp;47&nbsp;лет<br/>18&nbsp;лет вместе</small>
-          </div>
-          <div class="case-content">
-            <h3>«Мы&nbsp;стали соседями по&nbsp;дому»</h3>
-            <p>15-летний брак на&nbsp;грани развода. Дети, общий бизнес, ноль близости. Через полгода работы в&nbsp;парном формате нашли новый язык, переехали, начали путешествовать вместе. Сейчас сами ведут небольшую группу для&nbsp;пар.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── Pull-quote ───── -->
-  <section class="quote-section">
-    <div class="container reveal">
-      <p class="pull-quote">«Мы&nbsp;не&nbsp;про отказ от&nbsp;достижений. И&nbsp;не&nbsp;про уход только в&nbsp;мягкость. Мы&nbsp;<em>про&nbsp;соединение</em> этих двух начал.»</p>
-      <p class="pull-quote-author">— Марина Лодвикова</p>
-    </div>
-  </section>
-
-  <!-- ───── CTA ───── -->
-  <section class="cta-section" id="contact">
-    <div class="container cta-grid reveal">
-      <div>
-        <h2>Если в&nbsp;этом тексте<br/>вы&nbsp;узнали&nbsp;<em>себя</em></h2>
-        <p>Подберём подходящий формат работы. Расскажу про&nbsp;ближайшие группы, ретриты и&nbsp;возможность личных сессий.</p>
-      </div>
-      <div>
-        <a class="cta-button tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-           data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы и подобрать формат под себя.">Написать в&nbsp;Telegram →</a>
-        <br/><br/>
-        <a class="cta-second" href="https://marina-site-beryl.vercel.app" target="_blank" rel="noopener">Календарь июня&nbsp;2026 ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ───── Footer ───── -->
-  <footer>
-    <div class="footer-inner">
-      <div>Москва · 2026</div>
-      <div>Marina Lodvikova</div>
-      <a class="tg-cta" href="https://t.me/Diamondmari" target="_blank" rel="noopener"
-         data-tg="Здравствуйте, Марина!&#10;&#10;Пишу с сайта — хочу узнать подробнее о ваших форматах работы.">@Diamondmari</a>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
+  </div>
+  <footer>Marina Lodvikova · Москва · 2026</footer>
 </body>
 </html>
