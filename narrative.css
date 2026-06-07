@@ -823,6 +823,15 @@
   width: 100%;
   /* безопасная верхняя граница чтобы фото не было гигантским */
   max-height: calc(100svh - 180px);
+  overflow: hidden;
+  background: var(--paper, #F4EFE3);
+}
+.n-hero-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 .n-hero-photo .photo-slot-inner { padding: 32px; }
 
